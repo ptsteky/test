@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-nl*(lqcg50d5_^dzxk5n1#uy-_=+4=2&2o$s@7m&k2&2jvucq+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ptstekytest.herokuapp.com']
 
 
 # Application definition
@@ -79,13 +79,23 @@ WSGI_APPLICATION = 'teky.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'db.sqlite3',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'db.sqlite3',
+        'USER': '***',
+        'PASSWORD': '***',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
