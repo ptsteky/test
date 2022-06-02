@@ -1,1 +1,1 @@
-web: gunicorn teky.wsgi --log-file -
+web: gunicorn teky.wsgi --log-file=-
