@@ -27,7 +27,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = 'django-insecure-nl*(lqcg50d5_^dzxk5n1#uy-_=+4=2&2o$s@7m&k2&2jvucq+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['ptstekytest.herokuapp.com']
 
