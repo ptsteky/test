@@ -1,1 +1,1 @@
-web: gunicorn teky/teky.wsgi --log-file -
+web: gunicorn wsgi --log-file -
