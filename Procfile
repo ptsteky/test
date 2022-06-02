@@ -1,1 +1,1 @@
-web: gunicorn ptstekytest.wsgi --log-file -
+web: gunicorn  --log-file -
